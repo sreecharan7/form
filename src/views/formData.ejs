@@ -1,0 +1,40 @@
+<div class="container">
+    <div class="QuestionContainer">
+    
+    <div class="card">
+      <div class="card-body">
+        <h2 id="form-name"></h2>
+        <h3>description:</h3>
+        <h3 class="text-body-secondary" id="form-description"></h3>
+      </div>
+    </div>
+    
+    </div>
+    <div class="button-container">
+        <button type="button" class="btn btn-outline-primary" id="deleteformdataButton" >Clear submited data</button>
+        <a href="/form" type="button" class="btn btn-success">form</a>
+    </div>
+    
+</div>
+
+
+
+<div class="modal fade" id="confirmationModal" tabindex="-1" role="dialog" aria-labelledby="confirmationModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title" id="confirmationModalLabel">Confirm Deletion</h5>
+              <button type="button" class="close " data-dismiss="modal" aria-label="Close" id="dismiss-delete-cross">
+                  <span aria-hidden="true">&times;</span>
+              </button>
+          </div>
+          <div class="modal-body">
+              Are you sure you want to delete this answer data?
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal" id="dismiss-delete">Cancel</button>
+              <button type="button" id="confirmDelete" class="btn btn-danger">Delete</button>
+          </div>
+      </div>
+  </div>
+</div>

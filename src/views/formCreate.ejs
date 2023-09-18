@@ -1,0 +1,58 @@
+<div class="button-contain">
+    <button type="button" class="btn btn-primary  m-2" id="add">add</button>
+    <button type="button" class="btn btn-success m-2" id="submit" onclick="submit()">submit</button>
+</div>
+
+
+<div id="question-container" class="container">
+    <div class="card  border-light m-3 background-card" style="width: 18rem;" id="1-question">
+  <div class="card-body">
+    <div class="close-button-div">
+    <h5 class="card-title">Question box</h5>
+    <button type="button" class="btn-close" aria-label="Close" onclick="questionboxremover(1)" disabled></button>
+    </div>
+    <p class="card-text">enter the question</p>
+    <input type="text" class="form-control  border-warning input-background" id="question" required >
+     <input type="checkbox" class="form-check-input  border-warning" id="checkbox">
+    <label class="form-check-label" for="exampleCheck1">If multiple options present</label>
+  </div>
+  <div class="card-body">
+  <p class="card-text">enter the Options:-</p>
+  <input type="text" class="form-control my-1  border-warning options" required>
+  <input type="text" class="form-control  border-warning options" required>
+  </div>
+  <div class="card-body">
+    <button type="button" class="btn btn-outline-success" onclick="optionadd(1)">Add option</button>
+<button type="button" class="btn btn-outline-danger" onclick="optionremove(1)">Remove option</button>
+  </div>
+</div>
+</div>
+
+
+<div class="modal fade dark" id="modal-1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">About Form</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" disabled></button>
+      </div>
+      <div class="modal-body">
+         <div class="alert-name-showing">
+          </div>
+          <div class="mb-3 ">
+            <label for="recipient-name" class="col-form-label" >Name of the form :</label>
+            <input type="text" class="form-control border-dark" id="nameOfForm">
+          </div>
+          <div class="mb-3">
+            <label for="message-text" class="col-form-label">Description of the form :</label>
+            <textarea class="form-control border-dark" id="About-form"></textarea>
+          </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" id="save-form-data">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
