@@ -21,7 +21,7 @@ const mail=async function mailer(req,res,next){
     };
     transpoter.sendMail(message,(error,info)=>{
         if(error){
-            console.log("error happened while sending ,mail");
+            console.log("error happened while sending mail");
         }
         else{
             // console.log("email sent",info.response);
