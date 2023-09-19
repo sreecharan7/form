@@ -1,7 +1,9 @@
 This is the form creating website
 
 steps to install:
-1)install nodejs nd npm
+
+1)install nodejs and npm
+
 2)open in the terminal  code folder(package.json location) run code (npm install)
 
 --ready to use--
